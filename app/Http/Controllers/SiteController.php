@@ -55,7 +55,8 @@ class SiteController extends Controller
     }
 
     public function index(){
-        $count = Page::where('tempname',$this->activeTemplate)->where('slug','home')->count();
+        $count = Page::where('tempname', $this->activeTemplate)->where('slug','home')->count();
+
         if($count == 0){
             $page = new Page();
             $page->tempname = $this->activeTemplate;
@@ -63,9 +64,9 @@ class SiteController extends Controller
             $page->slug = 'home';
             $page->save();
         }
-
         $data['page_title'] = 'Home';
         $data['sections'] = Page::where('tempname',$this->activeTemplate)->where('slug','home')->firstOrFail();
+
         return view($this->activeTemplate . 'home', $data);
     }
 

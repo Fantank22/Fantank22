@@ -49,10 +49,12 @@
 
 
                 <div class="header-top-item">
-                    <a href="Mailto:{{@$contact->data_values->email_address}}"><i class="fa fa-envelope"></i>{{@$contact->data_values->email_address}}</a>
+                    <a href="Mailto:{{@$contact->data_values->email_address}}"><i
+                            class="fa fa-envelope"></i>{{@$contact->data_values->email_address}}</a>
                 </div>
                 <div class="header-top-item">
-                    <a href="tel:{{@$contact->data_values->contact_number}}"><i class="fa fa-mobile-alt"></i>{{@$contact->data_values->contact_number}}</a>
+                    <a href="tel:{{@$contact->data_values->contact_number}}"><i
+                            class="fa fa-mobile-alt"></i>{{@$contact->data_values->contact_number}}</a>
                 </div>
 
                 <div class="header-top-item ml-auto d-none d-sm-block">
@@ -65,12 +67,9 @@
                 </div>
 
 
-
             </div>
         </div>
     </div>
-
-
 
 
     <div class="header-bottom">
